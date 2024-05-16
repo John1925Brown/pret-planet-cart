@@ -1,0 +1,57 @@
+@use "../variables" as *;
+@use "../media" as *;
+
+.store {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &__header {
+  }
+
+  &__categories {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__category-btn {
+    position: relative;
+
+    padding-bottom: 10px;
+    color: $carrot;
+
+    &--active {
+      color: $green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      background-color: $green;
+    }
+
+    &--active::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &__cart-btn {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__product {
+  }
+}
