@@ -43,7 +43,7 @@
     @include laptop {
       background-size: 639px, auto;
     }
-    
+
     @include tablet {
       background-size: 100%, auto;
     }
@@ -71,6 +71,10 @@
   &__text {
     max-width: 440px;
     margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     @include bigscreen {
       max-width: 540px;
