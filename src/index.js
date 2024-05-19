@@ -7,6 +7,8 @@ const changeActiveBtn = (event) => {
     btn.classList.remove("store__category-btn--active");
   });
 
+  fetchProductByCategory(target.textContent);
+
   target.classList.add("store__category-btn--active");
 };
 
